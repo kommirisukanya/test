@@ -1,0 +1,107 @@
+https://www.simplilearn.com/tutorials/devops-tutorial/why-devops 
+
+git
+
+https://www.geeksforgeeks.org/working-on-git-bash/#:~:text=Step%201%3A%20Go%20to%20Github,local%20repository%20will%20be%20pushed.&text=Step%203%3A%20Push%20the%20changes%20in%20your%20local%20repository%20to%20GitHub.&text=Here%20the%20files%20have%20been,master%20branch%20of%20your%20repository.
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~ (master)
+$ git config --global user.name "sukki"
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~ (master)
+$ git config --global user.email "kommirisukanya@gmail.comx"
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~ (master)
+$ git config --global --list
+user.name=sukki
+user.email=kommirisukanya@gmail.comx
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~ (master)
+$ cd sukki
+bash: cd: sukki: No such file or directory
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~ (master)
+$ git clone https://github.com/sukki/jen.git
+Cloning into 'jen'...
+remote: Enumerating objects: 62, done.
+remote: Total 62 (delta 0), reused 0 (delta 0), pack-reused 62
+Receiving objects: 100% (62/62), 3.71 MiB | 2.17 MiB/s, done.
+Resolving deltas: 100% (12/12), done.
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~ (master)
+$ cd sukki
+bash: cd: sukki: No such file or directory
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~ (master)
+$ cd jen
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/jen (master)
+$
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/jen (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+=================
+
+pushing files to the repo
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/Desktop/sukku/testing (master)
+$ ls
+ AWS.docx   Devops_git.txt  'aws network.docx'
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/Desktop/sukku/testing (master)
+$ git init
+Initialized empty Git repository in C:/Users/sukanya.kommiri/Desktop/sukku/testing/.git/
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/Desktop/sukku/testing (master)
+$ git remote add origin https://github.com/sukki/sukki.git
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/Desktop/sukku/testing (master)
+$ git remote -v
+origin  https://github.com/sukki/sukki.git (fetch)
+origin  https://github.com/sukki/sukki.git (push)
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/Desktop/sukku/testing (master)
+$ git add .
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/Desktop/sukku/testing (master)
+$ git commit -m "First commit"
+[master (root-commit) ed693b3] First commit
+ 3 files changed, 38 insertions(+)
+ create mode 100644 AWS.docx
+ create mode 100644 Devops_git.txt
+ create mode 100644 aws network.docx
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/Desktop/sukku/testing (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/Desktop/sukku/testing (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 33.54 MiB | 9.95 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sukki/sukki.git
+ * [new branch]      master -> master
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~/Desktop/sukku/testing (master)
+$
+
+link : https://positive-stud.medium.com/upload-files-in-github-using-git-bash-terminal-creating-basic-repository-and-adding-files-f76925f4e47a
+
+===============
+
+cloning / copying the files 
+
+sukanya.kommiri@HDC4-L-2144XPX MINGW64 ~ (master)
+$ git clone https://github.com/sukki/jen.git
+Cloning into 'jen'...
+remote: Enumerating objects: 62, done.
+remote: Total 62 (delta 0), reused 0 (delta 0), pack-reused 62
+Receiving objects: 100% (62/62), 3.71 MiB | 2.17 MiB/s, done.
+Resolving deltas: 100% (12/12), done.
+
